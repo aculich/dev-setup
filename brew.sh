@@ -8,6 +8,8 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until the script has finished.
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+#### Github API token instructions: https://gist.github.com/christopheranderton/8644743
+
 # Check for Homebrew,
 # Install if we don't have it
 if test ! $(which brew); then
