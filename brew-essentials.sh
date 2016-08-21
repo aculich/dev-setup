@@ -43,6 +43,15 @@ brew cask install --appdir="/Applications" docker
 brew cask install --appdir="/Applications" emacs-nightly
 brew install cask --ignore-dependencies
 
+# Install Fonts
+brew tap caskroom/fonts
+brew cask install font-xits
+brew cask install font-source-code-pro
+brew cask install font-source-serif-pro
+brew cask install font-consolas-for-powerline
+brew cask install font-inconsolata
+brew cask install font-monoid
+
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
