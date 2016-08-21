@@ -94,9 +94,7 @@ brew install pandoc
 brew install python
 brew install python3
 brew install xonsh
-brew install python
-brew install python3
-brew install xonsh
+brew install asciinema
 
 # Remove outdated versions from the cellar.
 brew cleanup
