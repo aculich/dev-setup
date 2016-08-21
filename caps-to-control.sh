@@ -9,7 +9,7 @@
 # As described here:
 # https://apple.stackexchange.com/questions/178313/change-accessibility-setting-on-mac-using-terminal/239929#239929
 
-brew install tccutil
+brew list tccutil >/dev/null || brew install tccutil
 
 sudo tccutil --insert com.apple.Terminal
 sudo tccutil --enable com.apple.Terminal
