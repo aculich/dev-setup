@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 ###############################################################################
 # SSD-specific tweaks                                                         #
 # You might want to disable these if you are not running an SSD               #
