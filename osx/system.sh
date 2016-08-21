@@ -30,3 +30,6 @@ sudo systemsetup -setcomputersleep Off > /dev/null
 #rm -rf ~/Library/Application Support/Dock/desktoppicture.db
 #sudo rm -rf /System/Library/CoreServices/DefaultDesktop.jpg
 #sudo ln -s /path/to/your/image /System/Library/CoreServices/DefaultDesktop.jpg
+
+# Enable HiDPI display modes (requires restart)
+sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
