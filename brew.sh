@@ -2,6 +2,10 @@
 
 # Install command-line tools using Homebrew.
 
+# http://superuser.com/questions/203707/how-to-uninstall-homebrew-mac-os-x-package-manager/203740#203740
+# To uninstall run:
+#     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
+
 # Ask for the administrator password upfront.
 sudo -v
 
