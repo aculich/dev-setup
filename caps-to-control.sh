@@ -8,11 +8,17 @@
 
 # As described here:
 # https://apple.stackexchange.com/questions/178313/change-accessibility-setting-on-mac-using-terminal/239929#239929
+# Additionally:
+# http://stackoverflow.com/questions/31019916/is-not-allowed-for-assistive-access-error-when-running-applescript-from-java
 
 brew list tccutil >/dev/null || brew install tccutil
 
 sudo tccutil --insert com.apple.Terminal
 sudo tccutil --enable com.apple.Terminal
+sudo tccutil --insert com.googlecode.iterm2
+sudo tccutil --enable com.googlecode.iterm2
+sudo tccutil --insert /usr/bin/osascript
+sudo tccutil --enable /usr/bin/osascript
 
 osascript <<EOF
 tell application "System Preferences"
