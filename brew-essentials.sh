@@ -38,6 +38,7 @@ brew tap caskroom/versions
 brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" iterm2
 brew cask install --appdir="/Applications" amethyst
+brew cask install --appdir="/Applications" totalspaces
 brew cask install --appdir="/Applications" karabiner
 brew cask install --appdir="/Applications" seil
 brew cask install --appdir="/Applications" slack
