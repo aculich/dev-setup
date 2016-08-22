@@ -11,3 +11,4 @@
 ./osx/screen.sh
 ./osx/terms.sh
 ./osx/utils.sh
+./osx/restart-all-affected-services.sh
