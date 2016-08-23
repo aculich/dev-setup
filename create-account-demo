@@ -1,0 +1,20 @@
+#!/bin/sh
+
+# http://apple.stackexchange.com/questions/82472/what-steps-are-needed-to-create-a-new-user-from-the-command-line
+
+. /etc/rc.common
+
+LastID=`dscl . -list /Users UniqueID | awk '{print $2}' | sort -n | tail -1`
+NextID=$((LastID + 1))
+
+dscl . create /Users/demo
+dscl . create /Users/demo RealName "demo"
+dscl . create /Users/demo hint "Password Hint"
+dscl . create /Users/demo picture "/Library/User Pictures/Nature/Nest.tif"
+dscl . passwd /Users/demo demo
+dscl . create /Users/demo UniqueID $NextID
+dscl . create /Users/demo PrimaryGroupID 80
+dscl . create /Users/demo UserShell /usr/local/bin/bash
+dscl . create /Users/demo NFSHomeDirectory /Users/demo
+cp -R /System/Library/User\ Template/English.lproj /Users/demo
+chown -R demo:staff /Users/demo
