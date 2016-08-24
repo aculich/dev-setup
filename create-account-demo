@@ -29,5 +29,7 @@ sudo -u demo defaults write com.apple.SetupAssistant DidSeeCloudSetup -bool TRUE
 sudo -u demo defaults write com.apple.SetupAssistant GestureMovieSeen none
 sudo -u demo defaults write com.apple.SetupAssistant LastSeenCloudProductVersion "${sw_vers}"
 
+sudo -u demo ./caps-to-control.sh
+
 # http://apple.stackexchange.com/questions/201671/how-can-i-delete-multiple-users-from-os-x-yosemite
 #sudo dscl . delete /Users/demo ; sudo rm -rf /Users/demo
