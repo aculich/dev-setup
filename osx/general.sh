@@ -20,6 +20,10 @@ defaults write com.apple.systemuiserver menuExtras -array \
     "/System/Library/CoreServices/Menu Extras/Battery.menu" \
     "/System/Library/CoreServices/Menu Extras/Clock.menu"
 
+defaults write com.apple.menuextra.clock DateFormat -string "EEE MMM d  H:mm:ss"
+defaults write com.apple.menuextra.clock FlashDateSeparators -int 0
+defaults write com.apple.menuextra.clock IsAnalog -int 0
+
 # Set highlight color to green
 #defaults write NSGlobalDomain AppleHighlightColor -string "0.764700 0.976500 0.568600"
 
