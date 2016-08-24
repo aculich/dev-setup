@@ -81,5 +81,13 @@ start_if_needed() {
 #start_if_needed iTerm
 #open "${HOME}/init/Solarized Dark.itermcolors"
 
+# FIXME: this does not seem to work as expected yet
+# https://github.com/andrewmcveigh/osx-build/blob/master/install.sh
+# iTerm 2 settings
+defaults write com.googlecode.iterm2 LeftOption -int 2
+defaults write com.googlecode.iterm2 RightOption -int 2
+#defaults write com.googlecode.iterm2 "Option Key Sends" -int 2
+#defaults write com.googlecode.iterm2 "Right Option Key Sends" -int 2
+
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
