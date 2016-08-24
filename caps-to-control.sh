@@ -11,6 +11,28 @@
 # Additionally:
 # http://stackoverflow.com/questions/31019916/is-not-allowed-for-assistive-access-error-when-running-applescript-from-java
 
+# http://superuser.com/questions/590526/switch-function-keys-on-os-x-via-via-command-line
+
+# list of keyboards plugged in to this computer
+keyboard_ids=$(ioreg -n IOHIDKeyboard -r | grep -E 'VendorID"|ProductID' | awk '{ print $4 }' | paste -s -d'-\n' -)
+# check if the keyboards are already remapped
+echo $keyboard_ids | xargs -I{} sh -c 'defaults -currentHost read -g "com.apple.keyboard.modifiermapping.{}-0" | grep "Dst = 2" > /dev/null'
+if [[ $? -ne 0 ]]; then
+  # remap the keyboards
+  echo $keyboard_ids | xargs -I{} defaults -currentHost write -g "com.apple.keyboard.modifiermapping.{}-0" -array "<dict><key>HIDKeyboardModifierMappingDst</key><integer>2</integer><key>HIDKeyboardModifierMappingSrc</key><integer>0</integer></dict>"
+fi
+
+# http://apple.stackexchange.com/questions/4813/changing-modifier-keys-from-the-command-line
+# http://apple.stackexchange.com/questions/13598/updating-modifier-key-mappings-through-defaults-command-tool
+# http://apple.stackexchange.com/questions/141069/updating-modifier-keys-from-the-command-line-takes-no-effect
+# http://stevelosh.com/blog/2012/10/a-modern-space-cadet/
+# http://superuser.com/questions/206898/where-are-those-defaults-stored-in-os-x
+# https://github.com/mathiasbynens/dotfiles/issues/310
+# https://github.com/mathiasbynens/dotfiles
+
+
+exit
+
 brew list tccutil >/dev/null || brew install tccutil
 
 sudo tccutil --insert com.apple.Terminal
