@@ -111,3 +111,6 @@ brew install asciinema
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+# consider adding other packages from
+# https://github.com/mathiasbynens/dotfiles
