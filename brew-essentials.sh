@@ -115,6 +115,9 @@ brew install yubikey-personalization
 brew install ykclient
 brew install ykneomgr
 brew install ykpers
+brew install gpg
+brew install gpg-agent
+brew cask install --appdir="/Applications" gpgtools
 brew cask install --appdir="/Applications" yubico-authenticator
 brew cask install --appdir="/Applications" yubikey-neo-manager
 brew cask install --appdir="/Applications" yubikey-personalization-gui
