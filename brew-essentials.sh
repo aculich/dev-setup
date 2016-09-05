@@ -108,6 +108,19 @@ brew install python3
 brew install xonsh
 brew install asciinema
 
+# Install yubikey and other security related tools
+brew install oath-toolkit
+brew install yubico-piv-tool
+brew install yubikey-personalization
+brew install ykclient
+brew install ykneomgr
+brew install ykpers
+brew cask install --appdir="/Applications" yubico-authenticator
+brew cask install --appdir="/Applications" yubikey-neo-manager
+brew cask install --appdir="/Applications" yubikey-personalization-gui
+brew cask install --appdir="/Applications" yubikey-piv-manager
+brew cask install --appdir="/Applications" yubiswitch
+
 # Remove outdated versions from the cellar.
 brew cleanup
 
