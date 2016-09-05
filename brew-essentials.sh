@@ -84,11 +84,7 @@ sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells'
 # Change to the new shell, prompts for password
 chsh -s /usr/local/bin/bash
 
-# Install `wget` with IRI support.
-brew install wget --with-iri
-
 # Install more recent versions of some OS X tools.
-brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
@@ -101,14 +97,11 @@ brew install dark-mode
 brew install git
 brew install git-extras
 brew install hub
-brew install imagemagick --with-webp
 brew install pv
 brew install rename
 brew install speedtest_cli
 brew install ssh-copy-id
 brew install tree
-brew install webkit2png
-brew install zopfli
 brew install pandoc
 brew install python
 brew install python3
