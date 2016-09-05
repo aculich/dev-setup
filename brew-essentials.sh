@@ -124,6 +124,9 @@ brew cask install --appdir="/Applications" yubikey-personalization-gui
 brew cask install --appdir="/Applications" yubikey-piv-manager
 brew cask install --appdir="/Applications" yubiswitch
 
+## See instructions for setting up ssh+gpg+yubikey:
+##   https://www.isi.edu/~calvin/yubikeyssh.htm
+
 # Remove outdated versions from the cellar.
 brew cleanup
 
