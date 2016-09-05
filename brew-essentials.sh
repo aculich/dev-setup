@@ -47,6 +47,12 @@ brew cask install --appdir="/Applications" docker
 brew cask install --appdir="/Applications" emacs-nightly
 brew install cask --ignore-dependencies
 
+brew cask install google-cloud-sdk
+
+## Add to ~/.bash_profile
+# source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'
+# source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'
+
 # Install Fonts
 brew tap caskroom/fonts
 brew cask install --fontdir=/Library/Fonts font-xits
