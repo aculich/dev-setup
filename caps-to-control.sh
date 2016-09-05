@@ -33,15 +33,6 @@ fi
 
 exit
 
-brew list tccutil >/dev/null || brew install tccutil
-
-sudo tccutil --insert com.apple.Terminal
-sudo tccutil --enable com.apple.Terminal
-sudo tccutil --insert com.googlecode.iterm2
-sudo tccutil --enable com.googlecode.iterm2
-sudo tccutil --insert /usr/bin/osascript
-sudo tccutil --enable /usr/bin/osascript
-
 osascript <<EOF
 tell application "System Preferences"
    activate
