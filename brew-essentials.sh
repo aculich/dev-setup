@@ -49,12 +49,12 @@ brew install cask --ignore-dependencies
 
 # Install Fonts
 brew tap caskroom/fonts
-brew cask install font-xits
-brew cask install font-source-code-pro
-brew cask install font-source-serif-pro
-brew cask install font-consolas-for-powerline
-brew cask install font-inconsolata
-brew cask install font-monoid
+brew cask install --fontdir=/Library/Fonts font-xits
+brew cask install --fontdir=/Library/Fonts font-source-code-pro
+brew cask install --fontdir=/Library/Fonts font-source-serif-pro
+brew cask install --fontdir=/Library/Fonts font-consolas-for-powerline
+brew cask install --fontdir=/Library/Fonts font-inconsolata
+brew cask install --fontdir=/Library/Fonts font-monoid
 
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
