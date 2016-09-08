@@ -1,5 +1,10 @@
 #!/bin/sh -x
 
+### NOT A WARNING: This script creates a Standard User ccapable of causing
+### chaos, but probably not too much destruction.
+###
+### For destruction, please see: ./create-account-demogorgon
+
 # http://apple.stackexchange.com/questions/82472/what-steps-are-needed-to-create-a-new-user-from-the-command-line
 
 . /etc/rc.common
@@ -17,7 +22,8 @@ dscl . create /Users/demo hint "Password Hint"
 dscl . create /Users/demo picture "/Library/User Pictures/Nature/Nest.tif"
 dscl . passwd /Users/demo demo
 dscl . create /Users/demo UniqueID $NextID
-dscl . create /Users/demo PrimaryGroupID 80
+dscl . create /Users/demo PrimaryGroupID 20   # Standard User
+#dscl . create /Users/demo PrimaryGroupID 80  # Admin User
 dscl . create /Users/demo UserShell /usr/local/bin/bash
 dscl . create /Users/demo NFSHomeDirectory /Users/demo
 cp -R /System/Library/User\ Template/English.lproj /Users/demo

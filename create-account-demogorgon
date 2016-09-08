@@ -1,0 +1,45 @@
+#!/bin/sh -x
+
+###
+### WARNING: This script creates an Admin User capable of causing chaos and
+### destruction on your system.
+###
+###  Demogorgon is the most difficult of the demon princes and, indeed, the most
+###  difficult monster of any sort to appear in NetHack.
+###  https://nethackwiki.com/wiki/Demogorgon
+###
+
+# http://apple.stackexchange.com/questions/82472/what-steps-are-needed-to-create-a-new-user-from-the-command-line
+
+. /etc/rc.common
+
+# Determine OS version
+osvers=$(sw_vers -productVersion | awk -F. ‘{print $2}’)
+sw_vers=$(sw_vers -productVersion)
+
+LastID=`dscl . -list /Users UniqueID | awk '{print $2}' | sort -n | tail -1`
+NextID=$((LastID + 1))
+
+dscl . create /Users/demogorgon
+dscl . create /Users/demogorgon RealName "demogorgon"
+dscl . create /Users/demogorgon hint "Password Hint"
+dscl . create /Users/demogorgon picture "/Library/User Pictures/Nature/Nest.tif"
+dscl . passwd /Users/demogorgon demogorgon
+dscl . create /Users/demogorgon UniqueID $NextID
+#dscl . create /Users/demogorgon PrimaryGroupID 20  # Standard User
+dscl . create /Users/demogorgon PrimaryGroupID 80   # Admin User
+dscl . create /Users/demogorgon UserShell /usr/local/bin/bash
+dscl . create /Users/demogorgon NFSHomeDirectory /Users/demogorgon
+cp -R /System/Library/User\ Template/English.lproj /Users/demogorgon
+chown -R demogorgon:staff /Users/demogorgon
+
+# https://derflounder.wordpress.com/2013/10/27/disabling-the-icloud-sign-in-pop-up-message-on-lion-and-later/
+# https://github.com/rtrouton/rtrouton_scripts/tree/master/rtrouton_scripts/disable_apple_icloud_and_diagnostic_pop_ups
+sudo -u demogorgon defaults write com.apple.SetupAssistant DidSeeCloudSetup -bool TRUE
+sudo -u demogorgon defaults write com.apple.SetupAssistant GestureMovieSeen none
+sudo -u demogorgon defaults write com.apple.SetupAssistant LastSeenCloudProductVersion "${sw_vers}"
+
+sudo -u demogorgon ./caps-to-control.sh
+
+# http://apple.stackexchange.com/questions/201671/how-can-i-delete-multiple-users-from-os-x-yosemite
+#sudo dscl . delete /Users/demogorgon ; sudo rm -rf /Users/demogorgon
