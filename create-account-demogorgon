@@ -33,6 +33,15 @@ dscl . create /Users/demogorgon NFSHomeDirectory /Users/demogorgon
 cp -R /System/Library/User\ Template/English.lproj /Users/demogorgon
 chown -R demogorgon:staff /Users/demogorgon
 
+# summon demogorgon with imagemagick
+which mogrify >/dev/null || brew install imagemagick
+if [ ! -e Demogorgon.JPG ]; then
+  curl -O https://upload.wikimedia.org/wikipedia/en/8/89/Demogorgon.JPG
+  height=$(identify -format "%[width]" Demogorgon.JPG)
+  mogrify Demogorgon.JPG -gravity South -chop x$height Demogorgon.JPG
+fi
+cp -f Demogorgon.JPG "/Library/User Pictures/Fun/" && dscl . create /Users/demogorgon picture "/Library/User Pictures/Fun/Demogorgon.JPG"
+
 # https://derflounder.wordpress.com/2013/10/27/disabling-the-icloud-sign-in-pop-up-message-on-lion-and-later/
 # https://github.com/rtrouton/rtrouton_scripts/tree/master/rtrouton_scripts/disable_apple_icloud_and_diagnostic_pop_ups
 sudo -u demogorgon defaults write com.apple.SetupAssistant DidSeeCloudSetup -bool TRUE
