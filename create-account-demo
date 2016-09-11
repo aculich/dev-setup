@@ -10,7 +10,7 @@
 . /etc/rc.common
 
 # Determine OS version
-osvers=$(sw_vers -productVersion | awk -F. ‘{print $2}’)
+osvers=$(sw_vers -productVersion | awk -F. '{print $2}')
 sw_vers=$(sw_vers -productVersion)
 
 LastID=`dscl . -list /Users UniqueID | awk '{print $2}' | sort -n | tail -1`
