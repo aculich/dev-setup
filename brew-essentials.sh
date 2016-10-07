@@ -44,6 +44,8 @@ brew cask install --appdir="/Applications" seil
 brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" docker
+brew cask install --appdir="/Applications" screenflick
+brew cask install --appdir="/Applications" switchresx
 brew cask install --appdir="/Applications" emacs-nightly
 brew install cask --ignore-dependencies
 
