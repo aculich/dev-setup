@@ -94,6 +94,7 @@ brew install homebrew/dupes/screen
 brew install byobu
 
 # Install other useful binaries.
+brew install watch
 brew install ack
 brew install dark-mode
 brew install git
