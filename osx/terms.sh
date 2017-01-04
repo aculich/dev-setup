@@ -89,5 +89,8 @@ defaults write com.googlecode.iterm2 RightOption -int 2
 #defaults write com.googlecode.iterm2 "Option Key Sends" -int 2
 #defaults write com.googlecode.iterm2 "Right Option Key Sends" -int 2
 
+## Uncomment to enable Iterm2 Shell Integration
+# curl -L https://iterm2.com/misc/install_shell_integration_and_utilities.sh | bash
+
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
