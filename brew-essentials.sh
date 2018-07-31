@@ -96,6 +96,7 @@ brew install byobu
 
 # Install other useful binaries.
 brew install watch
+brew install jq
 brew install asciinema
 brew install pandoc
 brew install ack
