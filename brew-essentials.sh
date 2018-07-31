@@ -35,18 +35,19 @@ brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 
 # Core casks
+brew cask install --appdir="/Applications" emacs
 brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" iterm2
 brew cask install --appdir="/Applications" amethyst
 brew cask install --appdir="/Applications" totalspaces
-brew cask install --appdir="/Applications" karabiner
-brew cask install --appdir="/Applications" seil
+brew cask install --appdir="/Applications" karabiner-elements
+brew cask install --appdir="/Applications" spectacle
+#brew cask install --appdir="/Applications" seil
 brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" firefox
-brew cask install --appdir="/Applications" docker
+brew cask install --appdir="/Applications" docker-edge
 brew cask install --appdir="/Applications" screenflick
-brew cask install --appdir="/Applications" switchresx
-brew cask install --appdir="/Applications" emacs-nightly
+#brew cask install --appdir="/Applications" switchresx
 brew install cask --ignore-dependencies
 
 brew cask install google-cloud-sdk
@@ -95,6 +96,8 @@ brew install byobu
 
 # Install other useful binaries.
 brew install watch
+brew install asciinema
+brew install pandoc
 brew install ack
 brew install dark-mode
 brew install git
@@ -105,11 +108,9 @@ brew install rename
 brew install speedtest_cli
 brew install ssh-copy-id
 brew install tree
-brew install pandoc
 brew install python
 brew install python3
 brew install xonsh
-brew install asciinema
 
 # Install yubikey and other security related tools
 brew install oath-toolkit
