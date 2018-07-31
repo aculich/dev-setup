@@ -28,7 +28,7 @@ brew update
 brew upgrade --all
 
 # Install better (python) version: https://github.com/jacobsalmela/tccutil
-brew install tccutil
+#brew install tccutil
 
 # Install Cask
 brew install caskroom/cask/brew-cask
