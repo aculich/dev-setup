@@ -96,3 +96,5 @@ defaults write com.apple.dock wvous-bl-modifier -int 0
 # Bottom right screen corner → Disable screen saver
 defaults write com.apple.dock wvous-br-corner -int 6
 defaults write com.apple.dock wvous-br-modifier -int 0
+
+killall "Dock"
