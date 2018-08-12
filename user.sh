@@ -12,3 +12,5 @@
 ./osx/terms.sh
 ./osx/utils.sh
 ./osx/restart-all-affected-services.sh
+git config --global user.name "Aaron Culich"
+git config --global user.email "aculich@gmail.com"
