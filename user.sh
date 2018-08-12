@@ -12,6 +12,7 @@
 ./osx/terms.sh
 ./osx/utils.sh
 ./osx/restart-all-affected-services.sh
+cp com.googlecode.iterm2.plist /Users/me/Library/Preferences/com.googlecode.iterm2.plist
 cp .gitconfig ~/.gitconfig
 git config --global user.name "Aaron Culich"
 git config --global user.email "aculich@gmail.com"
