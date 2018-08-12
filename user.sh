@@ -16,3 +16,4 @@ cp com.googlecode.iterm2.plist /Users/me/Library/Preferences/com.googlecode.iter
 cp .gitconfig ~/.gitconfig
 git config --global user.name "Aaron Culich"
 git config --global user.email "aculich@gmail.com"
+git config --global credential.helper osxkeychain
