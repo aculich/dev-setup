@@ -123,6 +123,7 @@ brew install ykneomgr
 brew install ykpers
 brew install gpg
 brew install gpg-agent
+brew cask install --appdir="/Applications" gpg-suite
 brew cask install --appdir="/Applications" gpgtools
 brew cask install --appdir="/Applications" yubico-authenticator
 brew cask install --appdir="/Applications" yubikey-neo-manager
