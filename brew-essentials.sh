@@ -33,6 +33,7 @@ brew upgrade --all
 # Install Cask
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
+brew tap aculich/homebrew-custom
 
 # Core casks
 brew cask install --appdir="/Applications" emacs
