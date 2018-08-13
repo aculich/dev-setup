@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-./caps-to-control.sh
+#./caps-to-control.sh
 ./osx/accessories.sh
 ./osx/activity-monitor.sh
 ./osx/appstore.sh
