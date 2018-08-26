@@ -165,6 +165,14 @@
             "simple_modifications": [
                 {
                     "from": {
+                        "key_code": "right_command"
+                    },
+                    "to": {
+                        "pointing_button": "button1"
+                    }
+                },
+                {
+                    "from": {
                         "key_code": "right_option"
                     },
                     "to": {
