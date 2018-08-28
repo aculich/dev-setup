@@ -108,12 +108,10 @@
 						<string>0</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>649.000000:353.000000</string>
+				<string>769.000000:173.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -169,7 +167,10 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>TOUSER=$(echo $0 | cut -d- -f4 | cut -d. -f 1)
+					<string># # Enable fast user switching
+# defaults write /Library/Preferences/.GlobalPreferences MultipleSessionEnabled -bool true
+
+TOUSER=$(echo $0 | cut -d- -f4 | cut -d. -f 1)
 TOUSER=demo
 CGSession='/System/Library/CoreServices/Menu Extras/User.menu/Contents/Resources/CGSession'
 "$CGSession" -switchToUserID `id -u $TOUSER`
@@ -283,12 +284,10 @@ CGSession='/System/Library/CoreServices/Menu Extras/User.menu/Contents/Resources
 						<string>4</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>649.000000:536.000000</string>
+				<string>769.000000:356.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -298,7 +297,7 @@ CGSession='/System/Library/CoreServices/Menu Extras/User.menu/Contents/Resources
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>A40DF78C-024A-4398-8AB9-137B6153B822</key>
+		<key>AD1AD285-C33D-4155-A8A1-C22B17A47F85</key>
 		<dict>
 			<key>from</key>
 			<string>93EBA678-E4F6-405C-9390-44472266D9F4 - 93EBA678-E4F6-405C-9390-44472266D9F4</string>

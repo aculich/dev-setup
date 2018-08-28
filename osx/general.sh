@@ -93,3 +93,6 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 
 # Disable smart dashes as they’re annoying when typing code
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+
+# Enable fast user switching
+defaults write /Library/Preferences/.GlobalPreferences MultipleSessionEnabled -bool true
