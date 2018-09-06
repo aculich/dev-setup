@@ -3,6 +3,10 @@
 # https://superuser.com/questions/670584/how-can-i-migrate-all-keyboard-shortcuts-from-one-mac-to-another#
 # https://www.raizlabs.com/dev/2015/02/how-to-script-os-x-keyboard-shortcuts/
 
+# https://pawelgrzybek.com/change-macos-user-preferences-via-command-line/
+# https://github.com/pawelgrzybek/dotfiles/blob/master/setup-macos.sh
+# https://github.com/mathiasbynens/dotfiles/blob/master/.macos
+
 # Command:  @
 # Control:  ^
 # Option:   ~
