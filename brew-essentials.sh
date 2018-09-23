@@ -102,6 +102,8 @@ brew install jq
 brew install asciinema
 brew install pandoc
 brew install ack
+brew install ag
+brew install ripgrep
 brew install dark-mode
 brew install git
 brew install git-extras
