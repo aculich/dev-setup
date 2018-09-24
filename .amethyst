@@ -131,11 +131,11 @@
 },
 "swap-ccw": {
 "mod": "mod2",
-"key": "l"
+"key": "["
 },
 "swap-cw": {
 "mod": "mod2",
-"key": ";"
+"key": "]"
 },
 "swap-main": {
 "mod": "mod1",
