@@ -66,6 +66,7 @@ brew cask install --fontdir=/Library/Fonts font-source-serif-pro
 brew cask install --fontdir=/Library/Fonts font-consolas-for-powerline
 brew cask install --fontdir=/Library/Fonts font-inconsolata
 brew cask install --fontdir=/Library/Fonts font-monoid
+brew cask install --fontdir=/Library/Fonts font-sans-forgetica
 
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
