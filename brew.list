@@ -11,6 +11,7 @@ cask
 coreutils
 dark-mode
 diff-so-fancy
+doctl
 fd
 findutils
 fontconfig
@@ -28,6 +29,7 @@ gnutls
 htop
 httpie
 hub
+hugo
 jpeg
 jq
 json-c
@@ -55,7 +57,10 @@ moreutils
 ncdu
 nettle
 newt
+nmap
 npth
+nspr
+nss
 oath-toolkit
 oniguruma
 openjpeg
@@ -63,6 +68,7 @@ openssl
 p11-kit
 pandoc
 pcre
+pcre2
 pinentry
 pixman
 poppler
@@ -72,11 +78,13 @@ pv
 python
 readline
 rename
+ripgrep
 s-lang
 speedtest-cli
 sqlite
 ssh-copy-id
 tccutil
+telnet
 terraform
 the_silver_searcher
 tldr
