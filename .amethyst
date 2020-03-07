@@ -1,13 +1,12 @@
 {
 "LAYOUTS": "----------------------",
 "layouts": [
-            "fullscreen",
+            "floating",
             "widescreen-tall",
             "tall",
             "wide",
             "row",
             "column",
-            "floating",
 
             "tall",
             "tall-right",
@@ -21,6 +20,7 @@
             "floating",
             "widescreen-tall",
             "bsp",
+            "fullscreen",
             ],
 
 "MODIFIERS": "----------------------",
