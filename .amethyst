@@ -214,9 +214,9 @@
 "MISC": "----------------------",
 "floating": ["Karabiner Preferences"],
 "float-small-windows": true,
-"mouse-follows-focus": false,
+"mouse-follows-focus": true,
 "focus-follows-mouse": false,
 "enables-layout-hud": true,
-"enables-layout-hud-on-space-change": false
+"enables-layout-hud-on-space-change": false,
 "use-canary-build": true
 }
