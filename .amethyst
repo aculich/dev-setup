@@ -87,7 +87,7 @@
     "toggle-focus-follows-mouse": {"mod": "mod2", "key":	"x"},
     "relaunch-amethyst":					{"mod": "mod2", "key":	"z"},
 
-    "floating": ["Karabiner Preferences"],
+    "floating": ["Karabiner Preferences", "com.apple.systempreferences"],
     "floating-is-blacklist": true,
     "float-small-windows": true,
     "mouse-follows-focus": true,
