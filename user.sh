@@ -20,3 +20,6 @@ git config --global credential.helper osxkeychain
 # https://gist.github.com/aculich/01c38995ac7c6610a054f37ebdbe30b8
 # echo pinentry-program /usr/local/MacGPG2/libexec/pinentry-mac.app/Contents/MacOS/pinentry-mac >> ~/.gnupg/gpg-agent.conf
 # gpgconf --kill gpg-agent
+cp .amethyst ~/.amethyst
+rsync -av .config/ ~/.config/
+
